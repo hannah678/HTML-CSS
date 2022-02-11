@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Background</title>
+<style>
+    /*
+        1. background-color : 배경색
+        2. background-image : 배경이미지
+        3. background-repeat : 반복여부, 반복 방향
+          - 반복 여부 
+            1) repeat : (default) 가로 세로 모두 반복
+            2) no-repeat : 반복하지 않음
+          - 반복 방향
+            1) repeat-x : 가로 반복
+            2) repeat-y : 세로만 반복
+        4. background-position : 배경이미지 위치
+          - left, center, right, top, center, bottom
+        5. backgground-attachment : 배경이미지 고정 여부
+            1) scroll(default) : 스크롤하면 사라졌다 나타났다
+            2) fixed : 스크롤해도 고정위치
+        6. background-size : 배경이미지 사이즈
+          - 백분율, px
+    */
+    body{
+        /*스타일 시트 속성 그룹화*/
+        background: #ddd url(../img/03.jpg) no-repeat fixed;
+        
+        /*
+        background-color:#ddd;
+        background-image:url(../img/03.jpg);
+        background-repeat:no-repeat;
+        background-position: center center;*/
+        
+        
+        background-attachment:fixed;
+        background-size:300px 300px;
+        background-position:50% 30%;
+    }
+
+</style>
+</head>
+<body>
+<h1>background속성</h1>
+<pre>
+
+</pre>
+<img src="../img/01.jpg"/><br/>
+<img src="../img/01.jpg"/>
+</body>
+</html>
