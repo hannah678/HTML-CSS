@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+/**/
+	h1+h2{
+		background:pink;
+	}
+	h1~h2{
+		color:blue;
+	}
+	
+	/*state selector
+	focus: when the cursor selects a component */
+	#username: focus{
+		color: orange; font-size: 1.5em;
+	}
+	
+	/*disabled: apply to inactive components*/
+	input:disabled{
+		border:2px solid red;
+	}
+	
+	/*checked: apply when the component is checked*/
+	S
+</style>
+</head>
+<body>
+<form>
+	이름 <input type="text" name="userneme" id="uername" value="hong gildong" readonly/><br>
+	id <input type="text" name="userneme" id="uername" value="hong gildong" disabled/><br>
+
+<h1>sibling selector test 11111</h1>
+<h2>sibling selector test 22222</h2>
+<h2>sibling selector test 33333</h2>
+<h2>sibling selector test 44444</h2>
+<h2>sibling selector test 55555</h2>
+<h2>sibling selector test 66666</h2>
+<h3>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</h3>
+<h1>sibling selector test AAAAA</h1>
+<h2>sibling selector test BBBBB</h2>
+<h2>sibling selector test CCCCC</h2>
+<h2>sibling selector test DDDDD</h2>
+<h2>sibling selector test EEEEE</h2>
+<h2>sibling selector test FFFFF</h2>
+</form>
+</body>
+</html>
