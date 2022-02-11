@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	img{width:200px; height:250px;}
+	/*tagselector, id(#)selector, 
+	classselector: class can appear multiple times*/
+	c1{
+		background:yellow;
+	}
+	/*select by attribute 
+		$= : select tag which ends with a specific value
+		^= : select tag which start with a specific value
+		*= : select tag which contains a specific value
+	*/
+	img[title=flower]{
+		border:2px solid red;
+	}
+	
+	form>input[name$=id]{/*select input tag whose name attribute ends with id*/
+		background-color:pink !important;
+	}
+	form>input[name^=user]{
+		color: red;
+	}
+	form>imput[type*=t]{
+		background: lightblue;
+	}
+	form>input[value=goguma]{
+		background: green;
+		font-size: 1.5em;
+	}
+</style>
+</head>
+<body>
+<form>
+	id: <input type="text" name="userid"/><br/>
+	password: <input type="password" name="userpwd"/><br/>
+	<input type="submit" value="login"/>
+</form>
+<ul>
+	<li>selector1</li>
+	<li class="c1">selector2</li>
+	<li>selector3</li>
+	<li class="c1">selector4</li>
+	<li>selector5</li>
+	<li>selector6</li>
+	<li class="c1">selector7</li>
+</ul>
+<img src="../img/01.jpg"/>
+<img src="../img/02.jpg" title="flower"/>
+
+</body>
+</html>
