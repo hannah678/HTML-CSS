@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	body, ul, li{margin:0; padding:0px; list-style-type:none;}
+	img{width:0%; height:200px;}
+	body{background-color:#ddd;}
+	li{
+		background-color:#fff;
+		border:1px solid gray;
+		margin:5px;
+	}
+	
+	/*반응형 스타일 적용하기(조건식?)
+	320px~600px
+	all, screen, print, tv, projection....*/
+	@media all and(min-width:320px) and (max-width:600px){
+		li{background:yellow;}
+		img{width:100%;}
+	}
+	
+	/*601~900px*/
+	@media all and (min-width:601px) and (max-width:900px){
+		li{background:#000; color:#f00;}
+		img{width:30%;}
+	}
+	
+	/*901~px*/
+	@media all and (min-width:901px){
+		li{background:pink; color:green; font-weight:bold;}
+		img{width:20%;}
+	}
+</style>
+</head>
+<body>
+<ul>
+	<li>제네시스 GV70가 캐나다 자동차 기자협회 ‘2022 자동차 혁신상’에서 2관왕을 차지했다.</li>
+	<li>캐나다 자동차 기자협회 심사위원단은 ▲안전 혁신상에 GV70 어드밴스드 후석 승객 알림을 ▲기술 혁신상에 GV70 지문 인증 시스템 ▲친환경 혁신상 도요타 미라이 연료전지 파워트레인을 선정했다.</li>
+	<li>특히 캐나다 자동차 기자협회는 GV70에 적용된 지문 인증 기반의 발레 모드에도 주목하는 등 지문 인식 기술의 유용성과 미래 잠재력에 대해 높이 평가했다.</li>
+	<li>캐나다 자동차 기자협회장 스테파니 월크래프트는 "자동차 혁신상은 자동차 기술의 현대적 진보를 대표하는 상"이라며 "선정된 기술들은 최근 자동차 시장에서 가장 혁신적인 기술을 보여주고 있다”고 했다.</li>
+	<li>제네시스 관계자는 “GV70에 탑재된 지문인식과 후석 승객 알림 시스템은 고객들에게 안전하고 편리한 개인화 서비스를 제공하기 위한 제네시스만의 배려”라며 “앞으로도 제네시스는 혁신적인 기술을 바탕으로 차별화된 차량 사용경험을 제공하기 위해 노력할 것”이라고 말했다.</li>	
+	<li>이달의 차는 기자협회 산하 올해의 차 선정위원회가 전월 1일부터 말일까지 한 달 동안 출시된 신차와 부분변경 모델을 대상으로 심사해 발표한다. 평가 항목은 ▲내외부 디자인 및 감성 품질 ▲안전성 및 편의 사양 ▲동력 성능 ▲에너지 효율성 및 온실가스 배출 ▲상품성 및 구매 의향도 등 5가지다.</li>
+	<li>지난 1월에 출시된 신차 중에 폭스바겐 신형 8세대 골프와 폴스타 브랜드의 폴스타 2(브랜드명 가나다순)가 2월의 차 후보에 올랐으며, 치열한 경쟁 끝에 신형 8세대 골프가 39.7점(50점 만점)을 얻어 2월의 차로 최종 선정됐다.</li>
+</ul>
+<img src="../img/04.jpg"/><img src="../img/02.jpg"/>
+</body>
+</html>
