@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<!-- 
+	html속성
+	1. oncontextmenu : 마우스 오른쪽 키 사용 제어
+	2. onselectstart: 선택 시작 불가능(드래그 불가)
+	3. ondragstart:드래그 시작 불가능
+ -->
+<html oncontextmenu="return false" onselectstart = "return false" 
+	  ondragstart="return false" ondragend="return false">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	/*구조선택자
+		:nth-child()
+		           ① 2n : 짝수
+		           ② 2n+1 : 홀수번째들 선택해
+		           ③ 3n : 3의 배수번째들 선택해
+	*/
+	#lst>li:nth-child(3n){
+		background: pink;
+	}
+	#lst>li:first-child{
+		background: orange;
+	}
+	#lst>li:last-child{
+		color: red;
+		}
+	#body{margin:0px;}
+	/*그림자 만들기*/
+	#lst>li{
+		font-size:1.2em;
+		margin-bottom:30px;
+		border:1px solid #bbb;
+	}
+	/*박스 또는 글자에 그림자 표시*/
+	#lst>li{
+		/*box-shadow:오른쪽, 아래쪽, 투명도, 색상;*/
+		box-shadow:10px 5px 5px yellow;
+	}
+	#lst>li{
+		/*text-shadow:왼쪽, 위쪽, 투명도, 색상;*/
+		text-shadow: -10px -5px 10px gray;
+	}
+</style>
+</head>
+<body>
+<ul id="lst">
+	<li>맨드라미</li>
+	<li>장미</li>
+	<li>동백꽃</li>
+	<li>코스모스</li>
+	<li>민들레</li>
+	<li>해바라기</li>
+	<li>하야신스</li>
+	<li>카네이션</li>
+	<li>펜지</li>
+</ul>
+<style>
+	/*구조선택자
+		:first-of-type :처음 객체
+		:last-of-type:마지막 객체
+		:nth-of-type():괄호 안 번째 객체
+		            ① 2n : 짝수
+		            ② 2n+1 : 홀수번째들 선택해
+		            ③ 3n : 3의 배수번째들 선택해
+	*/
+	#lst2>li:nth-of-type(2n){
+		background:yellow;}
+	#lst2>li:nth-of-type(2n+1){
+		background:orange;
+	}
+	#lst2>li:first-of-type{
+		font-size:2em;}
+	#lst2>li:last-of-type{
+		color:green;}
+</style>
+<ul id="lst2">
+	<li>맨드라미</li>
+	<li>장미</li>
+	<li>동백꽃</li>
+	<li>코스모스</li>
+	<li>민들레</li>
+	<li>해바라기</li>
+	<li>하야신스</li>
+	<li>카네이션</li>
+	<li>펜지</li>
+</ul>
+<style>
+	/*텍스트 스타일*/
+	/*
+		::first-letter ->문단의 첫번째 문자에 스타일 적용
+		::first-line - >문단의 첫번째 줄에 스타일 적용(첫번째 줄 : 줄넘어감 기준)
+	*/
+		#txt::first-letter{
+			font-size:2em; background:pink; font-weight:bold; color:red}
+		#txt::first-line{
+			text-decoration:underline;
+	}
+</style>
+
+<div id="txt">
+한국자동차기자협회, 2022년 2월 ‘이달의 차’로 폭스바겐 8세대 골프 선정 [사진제공=한국자동차기자협회]
+사진설명한국자동차기자협회, 2022년 2월 ‘이달의 차’로 폭스바겐 8세대 골프 선정 [사진제공=한국자동차기자협회]
+한국자동차기자협회는 2022년 2월 ‘이달의 차’로 폭스바겐 8세대 골프를 선정했다고 7일 밝혔다.
+
+이달의 차는 기자협회 산하 올해의 차 선정위원회가 전월 1일부터 말일까지 한 달 동안 출시된 신차와 부분변경 모델을 대상으로 심사해 발표한다. 평가 항목은 ▲내외부 디자인 및 감성 품질 ▲안전성 및 편의 사양 ▲동력 성능 ▲에너지 효율성 및 온실가스 배출 ▲상품성 및 구매 의향도 등 5가지다.
+
+지난 1월에 출시된 신차 중에 폭스바겐 신형 8세대 골프와 폴스타 브랜드의 폴스타 2(브랜드명 가나다순)가 2월의 차 후보에 올랐으며, 치열한 경쟁 끝에 신형 8세대 골프가 39.7점(50점 만점)을 얻어 2월의 차로 최종 선정됐다.
+</div>
+
+</body>
+</html>
