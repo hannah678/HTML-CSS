@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>객체가 화면에 보이게 안보이게 만들기</title>
+<style>
+	div{
+		width:300px;height:300px;border:1px solid gray;
+	}
+	/*visibility 속성
+	 - 값1. hidden(숨김-숨겨지더라도 공간은 차지하고 있음)
+	 - 값2. visible(보여줌)-default*/
+	div:first-child{
+		background:yellow;
+		visibility:hidden;
+	}
+	/*display 속성
+	 - 값1. none(숨김-화면에서 숨겨지면 공간 반납.=>)
+	 - 값2. block(보여줌)-default*/
+	div:nth-child(2){
+		background:pink;
+		display:none;
+	}
+	div:last-child{
+		background:orange;
+	}
+</style>
+</head>
+<body>
+<div></div>
+<div></div>
+<div></div>
+</body>
+</html>
