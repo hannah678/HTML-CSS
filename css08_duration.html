@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	/*오버플로우 처리 방법*/
+	/* 
+	 1. overflow: scroll; : xy축 스크롤 생성
+	 2. `		: auto : 오버플로우된 부분에 스크롤 생성
+	 3. 		: hidden: 숨기기
+	*/
+	div{
+		overflow: hidden;
+		width:500px; height:500px; border:1px solid gray;
+		
+		/*지정한 시간(초단위) 동안 변화가 일어난다*/
+		transition-duration: 2s;
+	}
+	div>img{width:100%}
+	
+	input[type=checkbox]:checked +div{
+		height:0px;
+		opacity:0; /*0:투명, 1:불투명*/
+	}
+</style>
+</head>
+<body>
+<input type="checkbox"/> 사진 보기 클릭
+<div>
+	<img src="../img/02.jpg"/>
+	<img src="../img/01.jpg"/>
+</div>
+</body>
+</html>
